@@ -2,12 +2,19 @@
   Your html stuff that you want to print
 </div>
  
-<div id="print-section2"> 
-  <table border=2>
+<div style="" id="print-section2"> 
+    Your html stuff that you want to print
+  <table style="margin-left:200px;border:1px solid black">
     <tr>
       <th>head</th>
       <td>data</td>
   </tr>
   </table>
+  <table style="margin-left:400px;border:1px solid black">
+      <tr>
+        <th>head2</th>
+        <td>data</td>
+    </tr>
+    </table>
 </div>
-<button printSectionId="print-section" ngxPrint>print</button> 
+<button printSectionId="print-section2" [useExistingCss]="true" ngxPrint>print</button> 
